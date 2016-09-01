@@ -1,0 +1,12 @@
+e7db2777aa64e4c8acf7cf1857da3b26 *DESCRIPTION
+1c2727ad869c32e412c53b7a455695ae *NAMESPACE
+aabca8ce9846b351d85490fce4afc5a4 *R/introjs.R
+3678a6eb82f57527bf3347e6286ecf07 *README.md
+08bf562a1d6d0cc3c63f07da3de954bc *inst/javascript/introjs/intro.min.js
+64150acf3fb58f593bd65d068ff3e521 *inst/javascript/introjs/introjs.min.css
+09d648823532c56921f24899ed894393 *inst/javascript/introjs/license.md
+a8930a2e82b9500060f9347ad71a8e93 *inst/javascript/rintro.js
+3316b3982decfd98f18f57acf02229c5 *man/introBox.Rd
+fdd7d6546ff8834cf966f9d35857680b *man/introjs.Rd
+febd66f8907da5456de15c27c6c0180c *tests/testthat.R
+51933cb0eb80905e38a1fdd0ee088b76 *tests/testthat/test_introBox.R
