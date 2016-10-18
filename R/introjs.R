@@ -1,6 +1,19 @@
-### rintrojs package
-### written by Carl Ganz
-### wrapper for the introjs javascript library written by Afshin Mehrabani
+# Copyright (C) 2016 Carl Ganz
+#
+# This file is part of rintrojs.
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+# 
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #' Initiate intro.js
 #'
@@ -9,7 +22,7 @@
 #' @importFrom jsonlite toJSON
 #' @param session the Shiny session object (from the server function of the Shiny app)
 #' @param options List of options to be passed to introJs
-#' @param events List of text that are the body of a Javascript functions
+#' @param events List of text that are the body of a Javascript function
 #' @note For documentation on introJs options and events, see \url{https://github.com/usablica/intro.js/wiki/Documentation}.
 #' @seealso \code{\link{introBox}}
 #' @examples
