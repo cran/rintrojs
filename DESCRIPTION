@@ -1,7 +1,7 @@
 Package: rintrojs
 Type: Package
 Title: Wrapper for the 'Intro.js' Library
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
   person("Carl", "Ganz", email = "carlganz@gmail.com", role = c("aut", "cre")),
   person("Afshin", "Mehrabani", role = c("ctb","cph"), comment = "intro.js in javascript/introjs")
@@ -19,9 +19,9 @@ URL: https://github.com/carlganz/rintrojs
 BugReports: https://github.com/carlganz/rintrojs/issues
 Suggests: testthat, covr
 NeedsCompilation: no
-Packaged: 2016-10-18 17:15:37 UTC; carl
+Packaged: 2016-12-01 23:49:58 UTC; carl
 Author: Carl Ganz [aut, cre],
   Afshin Mehrabani [ctb, cph] (intro.js in javascript/introjs)
 Maintainer: Carl Ganz <carlganz@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-10-18 23:35:46
+Date/Publication: 2016-12-02 10:46:26

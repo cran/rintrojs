@@ -24,7 +24,7 @@ Use data.step to order the boxes and data.intro to specify the comment in the in
 library(rintrojs)
 library(shiny)
 ui <- shinyUI(fluidPage(
-  introjsUI(),
+  introjsUI(), # must include in UI
   mainPanel(
     introBox(
       tableOutput("mtcars"),
@@ -49,6 +49,6 @@ shinyApp(ui = ui, server = server)
 }
 }
 \seealso{
-\code{introjs}
+\code{\link{introjsUI}} \code{\link{introjs}}
 }
 
