@@ -1,6 +1,10 @@
 
 [![JOSS Status](http://joss.theoj.org/papers/10.21105/joss.00063/status.svg)](http://dx.doi.org/10.21105/joss.00063)[![Project Status: Active.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![Build Status](https://travis-ci.org/carlganz/rintrojs.svg?branch=master)](https://travis-ci.org/carlganz/rintrojs)[![Coverage Status](https://img.shields.io/codecov/c/github/carlganz/rintrojs/master.svg)](https://codecov.io/github/carlganz/rintrojs?branch=master)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/carlganz/rintrojs?branch=master&svg=true)](https://ci.appveyor.com/project/carlganz/rintrojs)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rintrojs)](https://cran.r-project.org/package=rintrojs)[![Licence](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.0.0-6666ff.svg)](https://cran.r-project.org/)
 
+### Note
+
+I am a graduate student, and I work full-time so time is very sparse. `rintrojs` will receive some well-deserved TLC in the summer when I have more time. Thank you for your patience.
+
 rintrojs
 ========
 
@@ -85,7 +89,7 @@ ui <- shinyUI(fluidPage(
 server <- shinyServer(function(input, output, session) {
   # initiate hints on startup with custom button and event
   hintjs(session, options = list("hintButtonLabel"="Hope this hint was helpful"),
-         events = list("onhintclose"='alert("Wasn\'t that hint helpful")'))
+         events = list("onhintclose"=I('alert("Wasn\'t that hint helpful")')))
   
   output$distPlot <- renderPlot({
     # generate bins based on input$bins from ui.R
@@ -104,7 +108,7 @@ server <- shinyServer(function(input, output, session) {
                introjs(session, options = list("nextLabel"="Onwards and Upwards",
                                                "prevLabel"="Did you forget something?",
                                                "skipLabel"="Don't be a quitter"),
-                                events = list("oncomplete"='alert("Glad that is over")'))
+                                events = list("oncomplete"=I('alert("Glad that is over")')))
   )
 })
 

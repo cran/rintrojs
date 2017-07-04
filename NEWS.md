@@ -1,3 +1,17 @@
+# rintrojs 0.2.0
+
+* Fix issue with boolean introjs options (Thanks @leonawicz [#16](https://github.com/carlganz/rintrojs/issues/16))
+
+* Upgrade to Intro.js 2.6.0
+
+* Add option to include Intro.js from CDN
+
+* Add data.position parameter to `introBox`
+
+## BREAKING CHANGES
+
+* Javascript code for events must now be wrapped by `I()`.
+
 # rintrojs 0.1.2
 
 * Fix modules issue (Thanks @thercast and @klmr [#15](https://github.com/carlganz/rintrojs/issues/15))

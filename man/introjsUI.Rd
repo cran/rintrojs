@@ -4,10 +4,14 @@
 \alias{introjsUI}
 \title{Set up Shiny app to use intro.js}
 \usage{
-introjsUI(includeOnly = FALSE)
+introjsUI(includeOnly = FALSE, cdn = FALSE, version = "2.5.0")
 }
 \arguments{
 \item{includeOnly}{Only include intro.js files. For users who will write their own javascript}
+
+\item{cdn}{Indicate whether to include intro.js files from CDN}
+
+\item{version}{Specify intro.js version to use from cdn}
 }
 \description{
 This function must be called from a Shiny app's UI in order
@@ -33,4 +37,3 @@ server = function(input, output, session) {
 )
 }
 }
-
