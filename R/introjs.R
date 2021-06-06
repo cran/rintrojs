@@ -23,7 +23,7 @@
 #' @param session the Shiny session object (from the server function of the Shiny app)
 #' @param options List of options to be passed to intro.js
 #' @param events List of text that are the body of a Javascript function. Must wrap in [I()]
-#' @note For documentation on intro.js options and events, see \url{https://github.com/usablica/intro.js/wiki/Documentation}.
+#' @note For documentation on intro.js options and events, see \url{https://introjs.com/docs/}.
 #' @seealso [introjsUI()] [introBox()]
 #' @examples
 #' \dontrun{
@@ -53,7 +53,7 @@
 #'   })
 #'   observeEvent(input$btn,
 #'                introjs(session, options = list("nextLabel"="Onwards and Upwards"),
-#'                                 events = list("oncomplete"='alert("It is over")')))
+#'                                 events = list("oncomplete"=I('alert("It is over")'))))
 #' })
 #' # Run the application
 #' shinyApp(ui = ui, server = server)
@@ -63,7 +63,9 @@
 introjs <- function(session,
                     options = list(),
                     events = list()) {
+  
   options <- list(options = options, events = events)
+  
   session$sendCustomMessage(type = "introjs",
                             message = jsonlite::toJSON(options,
                                                        auto_unbox = TRUE))
@@ -141,23 +143,23 @@ hintjs <- function(session,
 introjsUI <-
   function(includeOnly = FALSE,
            cdn = FALSE,
-           version = "2.5.0") {
+           version = "3.2.1") {
     if (!missing(version) && !cdn) {
       warning("version parameter is ignored when cdn = FALSE")
     }
     shiny::tags$head(shiny::singleton(
       shiny::tagList(
         shiny::includeScript(if (cdn) {
-          paste0("https://cdn.jsdelivr.net/intro.js/",
+          paste0("https://cdn.jsdelivr.net/intro.js@",
                  version,
-                 "/intro.min.js")
+                 "/minified/intro.min.js")
         } else {
           system.file("javascript/introjs/intro.min.js", package = "rintrojs")
         }),
         shiny::includeCSS(if (cdn) {
-          paste0("https://cdn.jsdelivr.net/intro.js/",
+          paste0("https://cdn.jsdelivr.net/intro.js@",
                  version,
-                 "/introjs.min.css")
+                 "/minified/introjs.min.css")
         } else {
           system.file("javascript/introjs/introjs.min.css",
                       package = "rintrojs")
