@@ -1,10 +1,22 @@
+# rintrojs 0.3.2
+
+* Fix improper use of `shiny::singleton` fixes #54 (Thanks @gregleleu @zagrebmukerjee)
+
+# rintrojs 0.3.1
+
+* Use different html attribute to identify tabPanels in jQuery, which fixes issue in #38 (Thanks @vaelliot @jsinnett)
+
+* Use Github Actions for CI
+
+* Update jQuery selector to require data-value attribute in case users use tab-pane class in unexpected ways
+
 # rintrojs 0.3.0
 
 * Added support of MathJax in tour steps ([#39](https://github.com/carlganz/rintrojs/issues/39), [#50](https://github.com/carlganz/rintrojs/pull/50)) (Thanks @etiennebacher)
 
 * Updated intro.js to 3.2.1
 
-* Fix a bunch of URLs (Thanks @eddelbuettel for https://github.com/eddelbuettel/littler/blob/master/inst/examples/urlUpdate.r)
+* Fix a bunch of URLs (Thanks https://github.com/eddelbuettel/littler/blob/master/inst/examples/urlUpdate.r)
 
 # rintrojs 0.2.2
 
