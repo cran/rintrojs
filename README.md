@@ -3,7 +3,7 @@
 Status](https://joss.theoj.org/papers/10.21105/joss.00063/status.svg)](https://dx.doi.org/10.21105/joss.00063)[![Project
 Status:
 Active.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![R-CMD-check](https://github.com/carlganz/rintrojs/workflows/R-CMD-check/badge.svg)](https://github.com/carlganz/rintrojs/actions)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rintrojs)](https://cran.r-project.org/package=rintrojs)[![Licence](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)[![minimal
+[![R-CMD-check](https://github.com/carlganz/rintrojs/workflows/R-CMD-check/badge.svg)](https://github.com/carlganz/rintrojs/actions)[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rintrojs)](https://cran.r-project.org/package=rintrojs)[![Licence](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)[![minimal
 R
 version](https://img.shields.io/badge/R%3E%3D-3.0.0-6666ff.svg)](https://cran.r-project.org/)
 
@@ -14,7 +14,7 @@ in the 70’s as a glue language. Statisticians at Bell Labs needed an
 interactive environment for working with their C and Fortran scripts.
 Decades later, R is still a glue language, except instead of C and
 Fortran, it brings together C++, and JavaScript. With the advent of the
-[Shiny](https://shiny.rstudio.com/) package, R is now a popular platform
+[Shiny](https://shiny.posit.co/) package, R is now a popular platform
 for developing data-driven web applications. As Shiny increases in
 popularity so will the complexity of the Shiny apps built. In many
 instances, new-users will require guidance when they first use a Shiny
@@ -195,7 +195,7 @@ key](https://allcontributors.org/docs/en/emoji-key)):
 <table>
 <tr>
 <td align="center">
-<a href="https://www.getgoodtree.com"><b>Carl Ganz</b></a><br />
+<a href="https://www.ribbitev.com"><b>Carl Ganz</b></a><br />
 </td>
 <td align="center">
 <a href="https://github.com/afshinm"><b>Afshin Mehrabani</b></a><br />

@@ -1,9 +1,9 @@
-71028209c6a395d85128409b00b0cf3b *DESCRIPTION
+35564015f0bf94d4a4668a180a1f9bea *DESCRIPTION
 3b92b0366849ab6031f3f3d90101f982 *NAMESPACE
-db691c34b39a55cfe9337b7ae2283f15 *NEWS.md
+d89f69dfd6bf518a3cc98a42779a0b45 *NEWS.md
 fe5c3efa4e667d11a431af4534abf54e *R/introjs.R
-f9ea589e83a3002f0afb732ee72755b7 *README.md
-1289809c084c7ce099609662fff801c6 *inst/CITATION
+e3d5e782e78ecb6dfeb5cf9e05bd41fa *README.md
+f7efec8797ec90d90cf9450a81cb37f2 *inst/CITATION
 a02ef51517eec16a82bf8f9cf4d1f6ed *inst/examples/switchTabs.R
 4bd8d5381b1fe0666722b6cf696cb622 *inst/javascript/introjs/intro.min.js
 6001983d071b78d2ded4d254e2707fec *inst/javascript/introjs/introjs.min.css

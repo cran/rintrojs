@@ -1,8 +1,8 @@
 citHeader("To cite rintrojs in publications use:")
 
-citEntry(entry = "Article",
+bibentry(bibtype = "Article",
   title        = "{rintrojs}: A Wrapper for the Intro.js Library",
-  author       = personList(as.person("Carl Ganz")),
+  author       = c(as.person("Carl Ganz")),
   journal      = "Journal of Open Source Software",
   publisher    = "The Open Journal",
   year         = "2016",
